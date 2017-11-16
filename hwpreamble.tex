@@ -1,0 +1,72 @@
+
+% for paired delimiters
+\usepackage{mathtools}
+
+% ???
+\usepackage{amsfonts}
+
+% for mathbb/mathcal?
+\usepackage{mathrsfs}
+
+% for theorem environments
+\usepackage{amsthm}
+
+% for bold symbols
+\usepackage{bm}
+
+\DeclarePairedDelimiter\parens{(}{)}
+\DeclarePairedDelimiter\pp{(}{)}
+\DeclarePairedDelimiter\abs{|}{|}
+\DeclarePairedDelimiter\norm{\|}{\|}
+\DeclarePairedDelimiter\bracks{[}{]}
+\DeclarePairedDelimiter\bb{[}{]}
+\DeclarePairedDelimiter\curly{\{}{\}}
+\DeclarePairedDelimiter\cc{\{}{\}}
+\DeclarePairedDelimiter\expec{\langle}{\rangle}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\eval{}{|}
+
+\def \sep {\qquad\qquad\qquad}
+\def \ds {\displaystyle}
+
+\newcommand{\comment}[1]{\sep\mbox{#1}}
+\newcommand{\septext}[1]{\qquad\mbox{#1}\qquad}
+\newcommand{\halfline}{\begin{center}\rule{0.5\paperwidth}{0.4pt}\end{center}}
+\newcommand{\threequartersline}{\begin{center}\rule{0.75\paperwidth}{0.6pt}\end{center}}
+\newcommand{\textboxed}[1]{$\boxed{\text{#1}}$}
+\newcommand{\case}[1]{\textbf{Case #1:}}
+
+\def \del {\nabla}
+
+\newcommand{\der}[3][]{\dfrac{d^{#1} #2}{d #3^{#1}}}
+\newcommand{\deriv}[3][]{\der[#1]{#2}{#3}}
+
+\newcommand{\parder}[3][]{\dfrac{\partial^{#1} #2}{\partial #3^{#1}}}
+\newcommand{\parderiv}[3][]{\parder[#1]{#2}{#3}}
+\newcommand{\pd}[3][]{\parder[#1]{#2}{#3}}
+
+\def \Var {\mbox{Var}}
+\def \Cov {\mbox{Cov}}
+\def \var {\mbox{var}}
+\def \cov {\mbox{cov}}
+\def \E {\mbox{E}}
+\def \P {\mbox{P}}
+\def \EE {\mathbb{E}}
+\def \PP {\mathbb{P}}
+\def \indp {\mbox{$\perp \kern-5.5pt \perp$}}
+
+\newcommand{\e}[1]{\times 10^{#1}}
+\newcommand{\ind}[1]{1_{\{#1\}}}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem*{proposition}{Proposition}
+\newtheorem*{conjecture}{Conjecture} 
+\newtheorem*{question}{Question} 
+\theoremstyle{definition}
+\newtheorem*{definition}{Definition}
+\newtheorem*{claim}{Claim}
+
